@@ -9,9 +9,8 @@
 /.vscode/
 
 # Django
-# migrations
-/polls/migrations/*
-!/polls/migrations/__init__.py
+/*/migrations/*
+!/*/migrations/__init__.py
 
 # databases
 /db.sqlite3
