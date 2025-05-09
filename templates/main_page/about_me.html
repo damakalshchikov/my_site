@@ -1,0 +1,25 @@
+{% block title %}Обо мне{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">{{ about_me.name }}</h1>
+                    <div class="mt-4">
+                        <p><strong>Возраст:</strong> {{ about_me.age }}</p>
+                        <p><strong>Город:</strong> {{ about_me.city }}</p>
+                        <p><strong>Email:</strong> <a href="mailto:{{ about_me.email }}">{{ about_me.email }}</a></p>
+                        <p><strong>Telegram:</strong> <a href="https://t.me/{{ about_me.telegram }}" target="_blank">{{ about_me.telegram }}</a></p>
+                    </div>
+                    <div class="mt-4">
+                        <h3>О себе</h3>
+                        <p>{{ about_me.about|linebreaks }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
