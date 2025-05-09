@@ -1,0 +1,23 @@
+# venv
+/.venv/
+
+# PyCharm
+/.idea/
+*/__pycache__
+
+# VSCode
+/.vscode/
+
+# Django
+# migrations
+/polls/migrations/*
+!/polls/migrations/__init__.py
+
+# databases
+/db.sqlite3
+
+# SQLite
+/db.sqlite3
+
+# flake8
+.flake8
