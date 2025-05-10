@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def main_page(request):
-    return render(request, "index.html")
+    return render(request, "main_page.html")
 
 
 def blog(request):
