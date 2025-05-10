@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Мой сайт{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-link-left">
+                    <a href="https://t.me/damakalshchikov">Telegram</a>
+                </div>
+                
+                <div class="footer-text">
+                    <p>2025 - ? damakalshchikov</p>
+                </div>
+
+                <div class="footer-link-right">
+                    <a href="https://github.com/damakalshchikov">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
