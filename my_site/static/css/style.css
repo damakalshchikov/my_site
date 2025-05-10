@@ -28,7 +28,7 @@ a {
 
 /* Стиль контента футера */
 .footer-content {
-    font-size: 21px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
