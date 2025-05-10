@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная страница</title>
+    </head>
+    <body>
+        <h1>Содержание сайта</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'blog' %}">Блог</a></li>
+                <li><a href="{% url 'goals' %}">Цели</a></li>
+                <li><a href="{% url 'about' %}">Об авторе</a></li>
+                <li><a href="{% url 'resources' %}">Материал, который я посчитал полезным</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
