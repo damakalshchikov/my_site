@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/main_page_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>
+        Привет, меня зовут Михаил Дамакальщиков.
+        Можешь поближе познакомиться со мной.
+    </h1>
+    <div class="grid">
+        <a href="{% url 'about' %}" class="grid-item">
+            Обо мне.
+        </a>
+        <a href="{% url 'blog' %}" class="grid-item">
+            Блог.
+        </a>
+        <a href="{% url 'goals' %}" class="grid-item">
+            Цели.
+        </a>
+        <a href="{% url 'resources' %}" class="grid-item">
+            Материалы.
+        </a>
+    </div>
+{% endblock %}
