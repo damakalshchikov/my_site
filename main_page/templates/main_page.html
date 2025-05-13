@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <title>Главная страница</title>
-    </head>
-    <body>
-        <h1>Содержание сайта</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'blog' %}">Блог</a></li>
-                <li><a href="{% url 'goals' %}">Цели</a></li>
-                <li><a href="{% url 'about' %}">Об авторе</a></li>
-                <li><a href="{% url 'resources' %}">Материал, который я посчитал полезным</a></li>
-            </ul>
-        </nav>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/main_page_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>
+        Привет, меня зовут Михаил Дамакальщиков.
+        Можешь поближе познакомиться со мной.
+    </h1>
+    <div class="grid">
+        <div class="grid-item">
+            <a href="/about">Обо мне.</a>
+        </div>
+        <div class="grid-item">
+            <a href="/blog">Блог.</a>
+        </div>
+        <div class="grid-item">
+            <a href="/goals">Цели.</a>
+        </div>
+        <div class="grid-item">
+            <a href="/resources">Материалы.</a>
+        </div>
+    </div>
+{% endblock %}
