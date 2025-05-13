@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,24 +7,36 @@ html, body {
 
 body {
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     display: flex;
-    
     flex-direction: column;
     font-family: 'Andale Mono', monospace;
-    
     text-align: center;
 }
 
-/* Делаем так, чтобы контент занимал всю высоту */
-.content {
-    flex: 1;
+/* Стиль для заголовков1 */
+h1 {
+    font-size: 40px;
 }
 
 /* Стиль для ссылок */
 a {
-    text-decoration: underline;
-    color: #000;
+    text-decoration: none;
+    color: black;
+}
+
+/* Делаем так, чтобы контент занимал всю доступную высоту и не перекрывал футер */
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Стиль для footer */
+footer {
+    flex-shrink: 0;
 }
 
 /* Стиль контента футера */
@@ -35,6 +48,7 @@ a {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 /* Стиль для ссылок в футере */
